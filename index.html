@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vipin Kumar | Salesforce Architect</title>
+<meta name="description" content="Vipin Kumar - Enterprise Salesforce Architect specializing in scalable architecture, Apex best practices, and Lightning Web Components.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --accent:#3b82f6;
+    --text:#e2e8f0;
+    --muted:#94a3b8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#111827);
+    color:var(--text);
+    scroll-behavior:smooth;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    background:rgba(15,23,42,0.9);
+    backdrop-filter:blur(10px);
+    padding:20px 0;
+    z-index:1000;
+}
+
+nav .nav-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:var(--text);
+    text-decoration:none;
+    margin-left:30px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.hero p{
+    margin-top:20px;
+    color:var(--muted);
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:14px 28px;
+    background:var(--accent);
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(59,130,246,0.4);
+}
+
+/* SECTION */
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:60px;
+}
+
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:var(--card);
+    padding:30px;
+    border-radius:12px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border:1px solid var(--accent);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:var(--muted);
+}
+
+/* BLOG */
+.blog-card{
+    background:#111827;
+    padding:25px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px 0;
+    background:#0b1120;
+    color:var(--muted);
+}
+
+/* ANIMATION */
+.fade-in{
+    opacity:0;
+    transform:translateY(30px);
+    transition:0.6s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-inner">
+        <div><strong>Vipin Kumar</strong></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#blog">Insights</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>Enterprise Salesforce Architect</h1>
+        <p>Building scalable, performance-driven Salesforce systems with clean architecture and precision engineering.</p>
+        <a href="#contact" class="btn">Let's Build</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title fade-in">Authority & Expertise</h2>
+        <div class="grid">
+            <div class="card fade-in">
+                <h3>6+ Years Experience</h3>
+                <p>Enterprise implementations across multiple domains with scalable architecture focus.</p>
+            </div>
+            <div class="card fade-in">
+                <h3>Apex & LWC Specialist</h3>
+                <p>Clean, optimized, governor-limit-safe code with performance-first mindset.</p>
+            </div>
+            <div class="card fade-in">
+                <h3>System Architecture</h3>
+                <p>Designing integrations, async patterns, and secure scalable frameworks.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="work">
+    <div class="container">
+        <h2 class="section-title fade-in">Signature Work</h2>
+        <div class="grid">
+            <div class="card fade-in">
+                <h3>AI-Powered Global Search</h3>
+                <p>Custom LWC search engine with dynamic indexing and performance tuning.</p>
+            </div>
+            <div class="card fade-in">
+                <h3>Enterprise Dashboard</h3>
+                <p>Real-time analytics dashboard optimized for 50k+ daily transactions.</p>
+            </div>
+            <div class="card fade-in">
+                <h3>Integration Framework</h3>
+                <p>Scalable API architecture with retry logic, queueable jobs, and error handling.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="blog">
+    <div class="container">
+        <h2 class="section-title fade-in">Architecture Insights</h2>
+        <div class="grid">
+            <div class="blog-card fade-in">
+                <h3>Apex Performance Best Practices</h3>
+                <p>Deep dive into bulkification, governor limits, and async design patterns.</p>
+            </div>
+            <div class="blog-card fade-in">
+                <h3>LWC Enterprise Patterns</h3>
+                <p>Scalable component architecture for high-performance applications.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container" style="text-align:center;">
+        <h2 class="section-title fade-in">Let's Build Scalable Systems</h2>
+        <p class="fade-in" style="color:var(--muted);">Email: vipin@email.com</p>
+        <a href="mailto:vipin@email.com" class="btn fade-in">Contact Me</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Vipin Kumar | Enterprise Salesforce Architect
+</footer>
+
+<script>
+// Scroll Animation
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+    threshold:0.2
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries,observer){
+    entries.forEach(entry=>{
+        if(!entry.isIntersecting){
+            return;
+        }else{
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+},appearOptions);
+
+faders.forEach(fader=>{
+    appearOnScroll.observe(fader);
+});
+</script>
+
+</body>
+</html>
